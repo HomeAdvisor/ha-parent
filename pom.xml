@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.homeadvisor</groupId>
+  <artifactId>ha-parent</artifactId>
+  <version>1.0.0</version>
+  <dependencies>
+      <!-- Test Dependencies -->
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>4.11</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.easymock</groupId>
+         <artifactId>easymock</artifactId>
+         <version>3.3.1</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.mockito</groupId>
+         <artifactId>mockito-all</artifactId>
+         <version>1.9.0</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.spockframework</groupId>
+         <artifactId>spock-core</artifactId>
+         <version>1.0-groovy-2.4</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.codehaus.groovy</groupId>
+         <artifactId>groovy-all</artifactId>
+         <version>2.4.4</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.codehaus.groovy.modules.http-builder</groupId>
+         <artifactId>http-builder</artifactId>
+         <version>0.7</version>
+         <scope>test</scope>
+      </dependency>
+  </dependencies>
+  <name>ha-parent</name>
+  <description>HomeAdvisor Parent POM</description>
+  <developers>
+    <developer>
+      <id>hagithub</id>
+      <name>HomeAdvisor Open Source Development</name>
+      <email>github@homeadvisor.com</email>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <properties>
+      <test.base.dir>test</test.base.dir>
+      <test.output.dir>test-classes</test.output.dir>
+      <test.arguments />
+      <additionalparam>-Xdoclint:none</additionalparam>
+  </properties>
+  <scm>
+    <url>scm:git@github.com:HomeAdvisor/ha-parent.git</url>
+    <connection>scm:git@github.com:HomeAdvisor/ha-parent.git</connection>
+  </scm>
+  <url>https://github.com/HomeAdvisor/ha-parent</url>
+</project>
